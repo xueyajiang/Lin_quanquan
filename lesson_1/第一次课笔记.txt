@@ -1,0 +1,64 @@
+编译过程：C++ 程序高级语言--->汇编语言--->机器码
+
+*.h ----头文件
+*.cpp-----源文件  例如：cout_cin.cpp
+
+
+编译器 g++.exe
+编译命令：
+ g++.exe "C:\N-20KEPC0Y7MCW-Data\yajxue\Desktop\cout_cin.cpp" -o "C:\N-20KEPC0Y7MCW-Data\yajxue\Desktop\cout_cin.exe"  -I"C:\Program Files (x86)\Dev-Cpp\MinGW64\include" -I"C:\Program Files (x86)\Dev-Cpp\MinGW64\x86_64-w64-mingw32\include" -I"C:\Program Files (x86)\Dev-Cpp\MinGW64\lib\gcc\x86_64-w64-mingw32\4.9.2\include" -I"C:\Program Files (x86)\Dev-Cpp\MinGW64\lib\gcc\x86_64-w64-mingw32\4.9.2\include\c++" -L"C:\Program Files (x86)\Dev-Cpp\MinGW64\lib" -L"C:\Program Files (x86)\Dev-Cpp\MinGW64\x86_64-w64-mingw32\lib" -static-libgcc
+
+编译生成的结果：
+cout_cin.exe 可执行文件
+
+代码注释：
+单行注释
+1. /*  */
+2. //
+多行注释
+3. /*
+
+
+
+   */
+
+取余符号：%
+
+变量：int a;
+
+数据类型：int 整型
+
+输入：cin>>a;
+输出: cout<<a;
+换行：endl
+
+#include <iostream>  /* 头文件 */ 
+using namespace std;  /* 命名空间 */ 
+/* 这节课主要讲授：cout cin endl int */
+int main()      /* 主函数 */   
+{
+    cout<<"Hello NOIPer!" <<endl; 
+    cout<<"Hello world！"; 
+    cout<<endl;
+    cout<<"我的名字叫。。。"<<endl;
+    cout<<"林圈圈"<<endl;
+    int a;
+    a = 1.235;
+    float b = 1.235;
+    cout<< a <<endl;
+    cout<<b<<endl; 
+    cout<<20+20<<endl;
+    cout<<20-20<<endl;
+    cout<<20*20<<endl;
+    cout<<20/20<<endl;
+    int c = 20 % 3;
+    cout<<c<<endl;
+    int d;
+    cin>>d;
+    cout<<"d: "<<d<<endl;
+    string name;
+    cin>>name;
+    cout<<"name:"<<name<<endl;
+
+    return 0;
+}
